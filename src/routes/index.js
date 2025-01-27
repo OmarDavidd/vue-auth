@@ -55,8 +55,7 @@ const routes = [
 	{
 		path: '/register',
 		name: 'register',
-		component: RegisterPage,
-		beforeEnter: authRequired
+		component: RegisterPage
 	},
 	{
 		path: '/:pathMatch(.*)*',

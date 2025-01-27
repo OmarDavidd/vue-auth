@@ -16,6 +16,7 @@ export const useUserStore = defineStore('userState', {
 				const userCredential = await signInWithEmailAndPassword(auth, email, password);
 				this.user = userCredential.user;
 				this.uid = userCredential.user.uid;
+				this.error = null;
 				return {
 					email: this.user.email,
 					uid: this.uid

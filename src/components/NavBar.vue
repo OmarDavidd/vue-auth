@@ -40,7 +40,7 @@ const handledLogout = async () => {
 						<li v-if="user != null">
 							<RouterLink class="text-gray-800 hover:text-blue-600" to="/perfil">Perfil</RouterLink>
 						</li>
-						<li v-if="user != null">
+						<li>
 							<RouterLink class="text-gray-800 hover:text-blue-600" to="/register">Register</RouterLink>
 						</li>
 					</ul>
